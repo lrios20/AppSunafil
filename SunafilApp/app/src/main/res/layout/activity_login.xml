@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blackback"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="70dp"
+            android:src="@drawable/logo" />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/edt_correo"
+           android:hint="Usuario"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@drawable/input"
+           android:paddingLeft="20dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:textColorHint="#000"
+           />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_contraseña"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#000"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Iniciar Sesion"
+            android:elevation="5dp"
+            android:background="@drawable/btn_redondo_white"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
