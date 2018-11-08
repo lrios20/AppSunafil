@@ -45,11 +45,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     public void onBindViewHolder(CustomViewHolder holder, int position){
         Item item = itemList.get(position);
         if(item.type == 0){
-            holder.ribbonLayout.setShowBottom(true);
-            holder.ribbonLayout.setShowBottom(true);
+            holder.ribbonLayout.setShowBottom(false);
+            holder.ribbonLayout.setShowBottom(false);
 
-            holder.ribbonLayout.setHeaderRibbonColor(Color.parseColor("#2B323A"));
-            holder.ribbonLayout.setHeaderTextColor(Color.parseColor("#FFFFFF"));
             holder.txt_direccion.setText(item.direccion);
             holder.txt_empleador.setText(item.empleador);
             holder.txt_orden.setText(item.orden);
@@ -57,11 +55,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
 
         }
         else if (item.type == 1){
-            holder.ribbonLayout.setShowBottom(true);
-            holder.ribbonLayout.setShowBottom(true);
+            holder.ribbonLayout.setShowBottom(false);
+            holder.ribbonLayout.setShowBottom(false);
 
-            holder.ribbonLayout.setHeaderRibbonColor(Color.parseColor("#B94948"));
-            holder.ribbonLayout.setHeaderTextColor(Color.parseColor("#FFFFFF"));
+//            holder.ribbonLayout.setHeaderRibbonColor(Color.parseColor("#B94948"));
+//            holder.ribbonLayout.setHeaderTextColor(Color.parseColor("#FFFFFF"));
             holder.txt_direccion.setText(item.direccion);
             holder.txt_empleador.setText(item.empleador);
             holder.txt_orden.setText(item.orden);
